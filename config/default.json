@@ -1,0 +1,13 @@
+{
+  "Customer": {
+    "dbConfig": {
+      "mongoUrl" : "mongodb://localhost:27017/urantest",
+      "dbName": "urantest"
+    },
+     "credit": {
+      "initialLimit": 100,
+      // Set low for development
+      "initialDays": 1
+    }
+  }
+}

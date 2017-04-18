@@ -1,0 +1,24 @@
+{
+  "name": "urantest",
+  "version": "1.0.0",
+  "description": "test task for uran company",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.15.2",
+    "i18n": "^0.8.3",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
