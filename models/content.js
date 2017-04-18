@@ -18,7 +18,7 @@ var contentSchema = new Schema({
 
      ru:
      {
-       type:Array 
+        type: Array 
      }
         
 });

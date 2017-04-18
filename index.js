@@ -9,9 +9,8 @@ var engine = require('ejs-mate');
 var mongoose = require('mongoose');
 
 var Content = require('./models/content');
+
 console.log('NODE_ENV: ' + config.util.getEnv('NODE_ENV'));
-
-
 
 mongoose.connect(config.get('Customer.dbConfig').mongoUrl);
 var db = mongoose.connection;
@@ -20,8 +19,6 @@ db.once('open', function () {
     // we're connected!
     console.log("Connected correctly to server");
 });
-
-
 
 /*checking if content exist
 fs.stat('./locales/ru.json', function(err, stat) {
@@ -76,7 +73,6 @@ app.get('/', function(req, res) {
   //copy content from db
 db.collection('Content').findOne({ "langfile" : 1 }, function (err, result) {
      if (err) return handleError(err);
-
    fs.writeFile('./locales/en.json', JSON.stringify(result.en), 'utf8');
    fs.writeFile('./locales/ru.json', JSON.stringify(result.ru), 'utf8');
   // fs.writeFile('./locales/en.json.tmp', JSON.stringify(result.en), 'utf8');
